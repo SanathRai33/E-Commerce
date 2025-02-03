@@ -65,6 +65,7 @@ body {
 		img {
 			flex-basis: 30%;
 			min-width: 250px;
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -240,6 +241,7 @@ body {
 		max-width: 1080px;
 		padding: 0px 25px;
 		margin: auto;
+		flex-wrap: wrap;
 
 		img {
 			cursor: pointer;
@@ -544,6 +546,60 @@ body {
 		}
 		.checkoutBtn:hover {
 			background-color: #222831;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.headerContent {
+		flex-direction: column;
+		h1,
+		p {
+			text-align: center;
+		}
+	}
+	.categories .container img {
+		flex-basis: 100%;
+	}
+
+	.product-container .products-card {
+		flex-basis: 100% !important;
+
+		.product-title,
+		.product-pricing {
+			text-align: center;
+		}
+		div {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.smart-watch-banner {
+		.container {
+			flex-direction: column;
+
+			.smart-watch-banner-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.testimonialParentContainer .testimonialInnerContainer .testimonialCards {
+		flex-basis: 100%;
+	}
+
+	.footer .footerInnerContainer {
+		flex-direction: column;
+
+		.footerColumn1 {
+			align-items: center;
+
+			.footerStoreContainer {
+				flex-direction: column;
+			}
 		}
 	}
 }
